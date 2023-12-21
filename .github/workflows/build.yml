@@ -1,0 +1,29 @@
+name: Build
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    name: Build for PR only
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          cache: pip
+          python-version: 3.9
+      - name: Install requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+          if [ -f /home/runner/work/UASTesting1/UASTesting1/requirements.txt ]; then pip install -r /home/runner/work/UASTesting1/UASTesting1/requirements.txt; fi
+      - name: Test app with pytest
+        run: |
+          pytest
+          pytest --cov
