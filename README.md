@@ -15,5 +15,8 @@ Lines 18 to 20 in 616785e
  <p>def test_post_cart(client):</p> 
 <p>   pass </p>
 
+# Link Tugas UAS 2 
+https://github.com/ademardiansyah/UASTesting1/blob/master/.github/workflows/build.yml
+
 # LINK Tugas Uas 3
 https://github.com/ademardiansyah/UASTesting1/tree/automation
