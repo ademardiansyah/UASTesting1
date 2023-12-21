@@ -14,3 +14,6 @@ Lines 18 to 20 in 616785e
  post new cart 
  <p>def test_post_cart(client):</p> 
 <p>   pass </p>
+
+# LINK Tugas Uas 3
+https://github.com/ademardiansyah/UASTesting1/tree/automation
